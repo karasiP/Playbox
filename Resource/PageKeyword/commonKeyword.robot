@@ -13,17 +13,16 @@ Open app AIS play
 Swipe To This Element MNU
     [Arguments]    ${ThisElementXpath}    ${Direction}=UP    ${Percent}=60      ${Range}=12
     Sleep   3s
-    # Do swipe until this element is found
-    :FOR    ${INDEX}    IN RANGE    1    ${Range}
-    # \    ${FoundThisElement}=    Run Keyword And Return Status    Mobile Element Should Be Visible    ${ThisElementXpath}
-    \    ${FoundThisElement}=    Run Keyword And Return Status    Wait Until Element Is Visible    ${ThisElementXpath}    1
-    \    ${FoundThisElement}=    Convert To Boolean    ${FoundThisElement}
-    \    Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "DOWN"    Swipe By Percent    15    50    15    ${Percent}
-    \    Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "UP"    Swipe By Percent    15    ${Percent}    15    50
-    \    Exit For Loop If    "${FoundThisElement}"=="True"
+    FOR    ${INDEX}    IN RANGE    1    ${Range}
+        ${FoundThisElement}=    Run Keyword And Return Status    Wait Until Element Is Visible    ${ThisElementXpath}    1
+        ${FoundThisElement}=    Convert To Boolean    ${FoundThisElement}
+        Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "DOWN"    Swipe By Percent    15    50    15    ${Percent}
+        Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "UP"    Swipe By Percent    15    ${Percent}    15    50
+        Exit For Loop If    "${FoundThisElement}"=="True"
+    END
     Run Keyword If    "${FoundThisElement}"=="False"    fail    This element is not found.
 
-
+        
 
 Choose Language
     Wait Until Element Is Visible    ${mnuHomePage}
