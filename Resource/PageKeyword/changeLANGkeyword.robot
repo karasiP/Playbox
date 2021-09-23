@@ -26,9 +26,9 @@ Verify Home Page
     Element Text Should Be            ${mnuPLAYNEWS}                 ${PLAYNEWS} 
     Element Text Should Be            ${mnuAIS360CHANNELS}           ${AIS360CHANNELS}
     Element Text Should Be            ${mnuNETFLIX}                  ${NETFLIX}
-    Element Text Should Be            ${mnuDisneyHotstar}            ${DisneyHotstar}
     Capture Page Screenshot          Verify Home Page2.png 
     Swipe To This Element MNU         ${mnuSetting}        Percent=80 
+    Element Text Should Be            ${mnuDisneyHotstar}            ${DisneyHotstar}
     Element Text Should Be            ${mnuWeTV}                     ${WeTV}
     Element Text Should Be            ${mnuVIU}                      ${VIU}
     Element Text Should Be            ${mnuAISKARAOKE}             ${AISKARAOKE}

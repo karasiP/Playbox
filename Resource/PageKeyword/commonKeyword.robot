@@ -31,7 +31,9 @@ Choose Language
     
 
 Change Language
-    Swipe To This Element MNU        ${mnuSetting}            Percent=80
+    Swipe By Percent    15    90    15    40
+    Swipe By Percent    15    90    15    40
+    Wait Until Element Is Visible      ${mnuSetting}
     Click Element        ${mnuSetting}
     Wait Until Element Is Visible            ${mnuPreferences}
     Click Element        ${mnuPreferences}
@@ -39,6 +41,14 @@ Change Language
     Click Element        ${mnuUILanguage}
     Run Keyword If    '${ar_LANG}'=='EN'    Click Element    ${rdoLanguageEnglish}
     Run Keyword If    '${ar_LANG}'=='TH'    Click Element    ${rdoLanguageThai}
+    Go Back to Home Page
+
+Go Back to Home Page
+    Wait Until Element Is Visible    ${mnuUILanguage}
+    Go Back
+    Go Back
+    Swipe By Percent    15    45    15    90
+    Wait Until Element Is Visible    ${mnuHomePage}
     
 
 Keywords For Teardown
