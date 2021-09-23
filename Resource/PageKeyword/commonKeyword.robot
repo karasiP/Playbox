@@ -16,10 +16,10 @@ Swipe To This Element
     # Do swipe until this element is found
     :FOR    ${INDEX}    IN RANGE    1    ${Range}
     # \    ${FoundThisElement}=    Run Keyword And Return Status    Mobile Element Should Be Visible    ${ThisElementXpath}
-    \    ${FoundThisElement}=    Run Keyword And Return Status    Wait Mobile Until Element Visible    ${ThisElementXpath}    1
+    \    ${FoundThisElement}=    Run Keyword And Return Status    Wait Until Element Is Visible    ${ThisElementXpath}    1
     \    ${FoundThisElement}=    Convert To Boolean    ${FoundThisElement}
-    \    Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "DOWN"    Swipe By Percent    50    50    50    ${Percent}
-    \    Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "UP"    Swipe By Percent    50    ${Percent}    50    50
+    \    Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "DOWN"    Swipe By Percent    15    50    15    ${Percent}
+    \    Run Keyword If    "${FoundThisElement}"=="False" and "${Direction}" == "UP"    Swipe By Percent    15    ${Percent}    15    50
     \    Exit For Loop If    "${FoundThisElement}"=="True"
     Run Keyword If    "${FoundThisElement}"=="False"    fail    This element is not found.
 
@@ -36,6 +36,13 @@ Change Language
     Click Element        ${mnuSetting}
     Wait Until Element Is Visible            ${mnuPreferences}
     Click Element        ${mnuPreferences}
+    Wait Until Element Is Visible           ${mnuUILanguage}
     Click Element        ${mnuUILanguage}
-    Run Keyword If    '${ar_LANG}'=='EN'    Click Mobile Element    ${rdoLanguageEnglish}
-    Run Keyword If    '${ar_LANG}'=='TH'    Click Mobile Element    ${rdoLanguageThai}
+    Run Keyword If    '${ar_LANG}'=='EN'    Click Element    ${rdoLanguageEnglish}
+    Run Keyword If    '${ar_LANG}'=='TH'    Click Element    ${rdoLanguageThai}
+    
+
+Keywords For Teardown
+    Run Keyword If Test Failed    Capture Page Screenshot
+    Run Keyword And Ignore Error        Close Application
+    
