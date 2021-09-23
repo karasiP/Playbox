@@ -10,7 +10,7 @@ Open app AIS play
     ...         automationName=UiAutomator2    noReset=true
 
 
-Swipe To This Element
+Swipe To This Element MNU
     [Arguments]    ${ThisElementXpath}    ${Direction}=UP    ${Percent}=60      ${Range}=12
     Sleep   3s
     # Do swipe until this element is found
@@ -32,7 +32,7 @@ Choose Language
     
 
 Change Language
-    Swipe To This Element        ${mnuSetting}            Percent=80
+    Swipe To This Element MNU        ${mnuSetting}            Percent=80
     Click Element        ${mnuSetting}
     Wait Until Element Is Visible            ${mnuPreferences}
     Click Element        ${mnuPreferences}
