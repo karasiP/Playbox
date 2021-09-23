@@ -14,7 +14,7 @@ ${KIDS}              KIDS
 ${ANIME}             ANIME
 ${SPORTS}            SPORTS
 ${PLAYNEWS}          PLAY NEWS
-${AIS360CHANNELS}    AIS 360 CHANNELS
+${AIS360CHANNELS}    AIS 360 CHANNEL
 ${NETFLIX}           NETFLIX
 ${DisneyHotstar}    Disney+ Hotstar
 ${WeTV}              WeTV

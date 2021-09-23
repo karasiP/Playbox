@@ -13,7 +13,7 @@ ${mnuKIDS}              xpath=//*[@class="android.widget.TextView" and @text="�
 ${mnuANIME}             xpath=//*[@class="android.widget.TextView" and @text="อนิเมะ" or @text="ANIME"]
 ${mnuSPORTS}            xpath=//*[@class="android.widget.TextView" and @text="กีฬา" or @text="SPORTS"]
 ${mnuPLAYNEWS}          xpath=//*[@class="android.widget.TextView" and @text="เพลย์ นิวส์" or @text="PLAY NEWS"]
-${mnuAIS360CHANNELS}    xpath=//*[@class="android.widget.TextView" and @text="เอไอเอส 360 แชนแนล" or @text="AIS 360 CHANNELS"]
+${mnuAIS360CHANNELS}    xpath=//*[@class="android.widget.TextView" and @text="เอไอเอส 360 แชนแนล" or @text="AIS 360 CHANNEL"]
 ${mnuNETFLIX}           xpath=//*[@class="android.widget.TextView" and @text="NETFLIX"]
 ${mnuDisneyHotstar}     xpath=//*[@class="android.widget.TextView" and @text="Disney+ Hotstar"]
 ${mnuWeTV}              xpath=//*[@class="android.widget.TextView" and @text="WeTV"]
