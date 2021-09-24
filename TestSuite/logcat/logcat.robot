@@ -1,9 +1,6 @@
 *** Settings ***
-Resource            ../Resource/PageKeyword/commonKeyword.robot
+Resource            ../../Resource/PageKeyword/logcatKeyword.robot
 
 *** Test Cases ***
-Test AIS Playbox
-    Open app AIS play
-    Selete AIS Playbox
+Test Logcat
     Get logcat
-    Close Application
