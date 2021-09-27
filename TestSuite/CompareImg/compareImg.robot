@@ -6,4 +6,4 @@ Resource        ../../Resource/PageKeyword/compareImgKeyword.robot
 ***Test Cases***
 compare image 
     Open app AIS play
-    Capture Full Screen  
+    Capture Images  
