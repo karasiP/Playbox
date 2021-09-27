@@ -2,8 +2,7 @@
 Resource        ../../Resource/PageKeyword/commonKeyword.robot
 Resource        ../../Resource/PageKeyword/compareImgKeyword.robot
 
-
 ***Test Cases***
-compare image menulist      #run >>robot -v images_dir:ReferenceimageEN/TH compareImg.robot
+compare image Listviewhomepage      #run >> robot -v images_dir:ReferencelistviewhomepageTH/EN comparemenuhomepage.robot
     Open app AIS play
-    Capture Images and Compare Element  
+    Capture Listviewhomepage and Compare image

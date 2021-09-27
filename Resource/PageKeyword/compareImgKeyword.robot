@@ -6,7 +6,7 @@ Resource        ../PageRepository/Android/changeLANGRepository.robot
 Resource        ../PageRepository/Android/commonRepository.robot
 
 ***Keywords***
-Capture Images
+Capture Images and Compare Element 
     Sleep   3s
     Open Eyes    AppiumLibrary        5
     Sleep   3s
@@ -37,4 +37,11 @@ Capture Images
     Capture Element           ${mnuBROWSER}                tolerance=1        name=menuBROWSER
     Capture Element           ${mnuINBOX}                  tolerance=1        name=menuINBOX
     Capture Element           ${mnuSetting}                tolerance=1        name=menuSETTINGS
+    Compare Images
+
+Capture Listviewhomepage and Compare image
+    Sleep   3s
+    Open Eyes    AppiumLibrary        5
+    Sleep   3s
+    Capture Element           ${listviewhomepage}                tolerance=1        name=listviewhomepage
     Compare Images
