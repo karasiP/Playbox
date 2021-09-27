@@ -4,6 +4,6 @@ Resource        ../../Resource/PageKeyword/compareImgKeyword.robot
 
 
 ***Test Cases***
-compare image 
+compare image menulist
     Open app AIS play
     Capture Images  
