@@ -46,7 +46,7 @@ Capture Listviewhomepage and Compare image
     Capture Element           ${listviewhomepage}                tolerance=2        name=listviewhomepage
     Compare Images
 
-Capture Listviewhomepage and Compare image 2 image  
+Capture Listviewhomepage Slice and Compare image 2 image  
     Sleep   3s
     Open Eyes    AppiumLibrary        5
     Sleep   3s
