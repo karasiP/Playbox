@@ -51,6 +51,6 @@ Capture Listviewhomepage Slice and Compare image 2 image
     Open Eyes    AppiumLibrary        5
     Sleep   3s
     Capture Element           ${listviewhomepage}                tolerance=2        name=listviewhomepage
-    Swipe By Percent    15    90    15    40
+    Swipe By Percent    15    90    15    30
     Capture Element           ${listviewhomepage}                tolerance=1        name=listviewhomepage1
     Compare Images
