@@ -25,20 +25,21 @@ Swipe To This Element MNU
         
 
 Choose Language
-    Wait Until Element Is Visible    ${mnuHomePage}
+    Wait Until Element Is Visible    ${mnuHomePage}         30s
     ${title}       Get Text          ${mnuHomePage}     
     Run Keyword If    ('${title}'=='HOME' and '${ar_LANG}'=='TH' ) or ('${title}'=='หน้าแรก' and '${ar_LANG}'=='EN' )    Change Language
     
 
 Change Language
-    Swipe By Percent    15    90    15    40
-    Swipe By Percent    15    90    15    40
+    Swipe By Percent    15    90    15    30
+    Swipe By Percent    15    90    15    30
     Wait Until Element Is Visible      ${mnuSetting}
     Click Element        ${mnuSetting}
     Wait Until Element Is Visible            ${mnuPreferences}
     Click Element        ${mnuPreferences}
     Wait Until Element Is Visible           ${mnuUILanguage}
     Click Element        ${mnuUILanguage}
+    Wait Until Element Is Visible           ${rdoLanguageEnglish}   30s
     Run Keyword If    '${ar_LANG}'=='EN'    Click Element    ${rdoLanguageEnglish}
     Run Keyword If    '${ar_LANG}'=='TH'    Click Element    ${rdoLanguageThai}
     Go Back to Home Page

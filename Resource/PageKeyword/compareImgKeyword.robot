@@ -39,18 +39,3 @@ Capture Images and Compare Element
     Capture Element           ${mnuSetting}                tolerance=1        name=menuSETTINGS
     Compare Images
 
-Capture Listviewhomepage and Compare image
-    Sleep   3s
-    Open Eyes    AppiumLibrary        5
-    Sleep   3s
-    Capture Element           ${listviewhomepage}                tolerance=2        name=listviewhomepage
-    Compare Images
-
-Capture Listviewhomepage Slice and Compare image 2 image  
-    Sleep   3s
-    Open Eyes    AppiumLibrary        5
-    Sleep   3s
-    Capture Element           ${listviewhomepage}                tolerance=2        name=listviewhomepage
-    Swipe By Percent    15    90    15    40
-    Capture Element           ${listviewhomepage}                tolerance=1        name=listviewhomepage1
-    Compare Images
