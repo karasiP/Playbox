@@ -1,0 +1,6 @@
+***Variables***
+${bannerNETFLIX}        xpath=//android.support.v7.widget.RecyclerView[@content-desc="WORLD CLASS ENTERTAINMENT"]/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.ImageView
+${bannerDisneyHotstar}     xpath=//android.support.v7.widget.RecyclerView[@content-desc="WORLD CLASS ENTERTAINMENT"]/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.ImageView
+${bannerWeTV}              xpath=//android.support.v7.widget.RecyclerView[@content-desc="WORLD CLASS ENTERTAINMENT"]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.ImageView
+${bannerVIU}               xpath=//android.support.v7.widget.RecyclerView[@content-desc="WORLD CLASS ENTERTAINMENT"]/android.widget.FrameLayout[4]/android.widget.FrameLayout/android.widget.ImageView
+${bannerAISKARAOKE}        xpath=//android.support.v7.widget.RecyclerView[@content-desc="WORLD CLASS ENTERTAINMENT"]/android.widget.FrameLayout[5]/android.widget.FrameLayout/android.widget.ImageView
