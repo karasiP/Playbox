@@ -6,8 +6,7 @@ Resource        ../../Resource/PageKeyword/compareimgbannerKeyword.robot
 
 
 ***Test Cases***
-compare image Banner Partner
-    Open app AIS play
+compare image Banner Partner            #run >> robot -v images_dir:ReferenceBannerPartner -v ar_OS:Android comparebannerpartner.robot
     Wait Until Element Is Visible       ${mnuHomePage}      30s
     Click Element       ${mnuHomePage}
     Capture Banner Partner and Compare images
