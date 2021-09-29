@@ -1,9 +1,6 @@
 ***Settings***
 Library         AppiumLibrary
 Library         RobotEyes
-Resource        ../PageRepository/Android/compareImgRepository.robot
-Resource        ../PageRepository/Android/changeLANGRepository.robot
-Resource        ../PageRepository/Android/commonRepository.robot
 Resource        ../../Resource/PageRepository/Android/compareimgbannerRepository.robot
 
 
